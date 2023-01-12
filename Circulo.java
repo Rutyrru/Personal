@@ -6,7 +6,11 @@ public class Circulo {
     static double radio;
 
     public Circulo(double radio) {
-    this.radio=radio;
+        if (radio < 0) {
+            this.radio = 0;
+        } else {
+            this.radio = radio;
+        }
     }
 
     public static double getRadio() {
@@ -21,7 +25,11 @@ public class Circulo {
         static double altura;
         public Cilindro(double radio, double altura) {
             super(radio);
-            this.altura=altura;
+            if (altura < 0) {
+                this.altura = 0;
+            } else {
+                this.altura = altura;
+            }
         }
         public double getAltura() {
             return altura;
