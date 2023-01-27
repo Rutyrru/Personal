@@ -77,7 +77,7 @@ public class Estudiante implements  Comparable<Estudiante>{
         System.out.println("---------------Ahora ordenaremos a los Alumnos de mayor altura a menor y en el caso que la altura sea igual, se ordenara por quien es mayor---------------");
         System.out.println();
         for (int i = 0; i < arrayEstudiantes.length; i++) {
-            System.out.println((i+1)+"- "+ arrayEstudiantes[i].Nombre +" "+ arrayEstudiantes[i].Altura+" "+arrayEstudiantes[i].Edad);
+            System.out.println((i+1)+"- "+ arrayEstudiantes[i].Nombre +" Altura: "+ arrayEstudiantes[i].Altura+" Edad: "+arrayEstudiantes[i].Edad);
         }
     }
 }
