@@ -62,7 +62,6 @@ public class Estudiante implements  Comparable<Estudiante>{
         arrayEstudiantes[4]=ee;
 
         System.out.println("----------------Lo primero de todo vamos a comparar de todos los estudiantes quien es mas alto.---------------");
-        System.out.println();
         for (int i = 0; i < arrayEstudiantes.length; i++) {
             for (int j = i+1; j < arrayEstudiantes.length; j++) {
                 if(arrayEstudiantes[i].compareTo(arrayEstudiantes[j])<0){
@@ -70,9 +69,15 @@ public class Estudiante implements  Comparable<Estudiante>{
                 }else if (arrayEstudiantes[i].compareTo(arrayEstudiantes[j])>0){
                     System.out.println(arrayEstudiantes[j].Nombre+" es mas bajo que " +arrayEstudiantes[i].Nombre );
                 }
-                Arrays.sort(arrayEstudiantes);
+
             }
         }
+        System.out.println();
+        System.out.println("---------------Ahora mostraremos a los Alumnos sin orden ninguno---------------");
+        for (int i = 0; i < arrayEstudiantes.length; i++) {
+            System.out.println((i+1)+"- "+ arrayEstudiantes[i].Nombre +" Altura: "+ arrayEstudiantes[i].Altura+" Edad: "+arrayEstudiantes[i].Edad);
+        }
+        Arrays.sort(arrayEstudiantes);
         System.out.println();
         System.out.println("---------------Ahora ordenaremos a los Alumnos de mayor altura a menor y en el caso que la altura sea igual, se ordenara por quien es mayor---------------");
         System.out.println();
