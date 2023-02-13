@@ -49,9 +49,11 @@ public class Album {
     }
 
     public boolean addToPlaylist(String titulo, LinkedList<song> lista) {
+        song cancion=findSong(titulo);
         boolean retorno;
-        if (findSong(titulo) == null) {
+        if (cancion != null) {
             System.out.println("La cancion se ha añadido a la lista de reproduccion");
+            lista.add(cancion);
             retorno = true;
             return retorno;
         } else {
